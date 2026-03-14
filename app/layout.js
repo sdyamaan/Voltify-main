@@ -12,7 +12,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
+  return ( 
+       <Clerkprovider>
       <html lang="en">
         <head>
           <link rel="icon" href="/favicon.png" type="image/png" />
@@ -24,5 +25,6 @@ export default function RootLayout({ children }) {
           </AppContextProvider>
         </body>
       </html>
+      </Clerkprovider>
   );
 }
